@@ -1,0 +1,15 @@
+<div class="container" *ngFor="let dish of dishes">
+
+    <div class="card-decks">
+        <div class="card border-primary" style="width: 18rem;">
+            <img class="card-img-top" src="{{dish.image}}" alt="Card image cap" wodth=300 height=300>
+            <div class="card-body">
+                <h3 class="card-title">{{dish.name}}</h3>
+                <p class="card-text">{{dish.description}}</p>
+                <a href="#" class="btn btn-primary">{{dish.price}}</a>
+            </div>
+        </div>
+
+    </div>
+
+</div>

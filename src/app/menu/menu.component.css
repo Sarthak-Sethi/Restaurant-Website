@@ -1,3 +1,14 @@
-.card-decks {
-    display: inline-table;
+.card-deck {
+    display: flex;
+    margin:50px;
+    flex-wrap: wrap;
+   
+}
+.card {
+    background-color: chartreuse;
+    margin: auto;
+    width:319px;
+    height: 600px;
+
+    
 }

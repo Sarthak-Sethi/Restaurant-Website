@@ -1,0 +1,35 @@
+<ng-container>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col col-lg-6">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="{{dish.image}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{dish.name}}</h5>
+                        <p class="card-text">{{dish.description}}</p>
+                        <a href="#" class="btn btn-primary">{{dish.price}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-6 mt-5">
+                <div class="list-group" *ngFor = "let comment of dish.comments" > 
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">{{comment.author}}</h5>
+                        <small>{{comment.date | date}}</small>
+                      </div>
+                      <p class="mb-1">{{comment.comment}}</p>
+                      <app-rating [currentRate] = "comment.rating" >
+
+                      </app-rating>
+                    </a>
+                  </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</ng-container>

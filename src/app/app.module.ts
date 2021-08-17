@@ -10,21 +10,38 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { RatingComponent } from './rating/rating.component';
+import { DishserviceService } from './services/dishservice.service';
+import { HeaderComponent } from './layouts/header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+import { HomeComponent } from './nav/home/home.component';
+import { AboutComponent } from './nav/about/about.component';
+import { ContactComponent } from './nav/contact/contact.component';
+import { RoutingModule } from './routing/routing.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     DishdetailComponent,
-    RatingComponent
+    RatingComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     FlexLayoutModule,
+    RoutingModule
   ],
-  providers: [],
+  providers: [DishserviceService],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }

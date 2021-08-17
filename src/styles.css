@@ -2,7 +2,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 .card {
-    background-color: chartreuse;
+    background-color: #835ef2;
     margin: auto;
     width:319px;
     height: 600px;

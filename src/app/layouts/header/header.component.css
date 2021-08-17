@@ -1,24 +1,29 @@
-/* $lt-gray: #ddd;
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9; */
-
-/* @mixin zero-margin($pad-up-down, $pad-left-right) {
-    margin: 0px auto;
-    padding: $pad-up-down $pad-left-right;
-} */
-
-.jumbotron {
-    
-    background: #9575CD ;
-    color:floralwhite;
-    min-width: 400px;
-    min-height: 300px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
 #navbar {
-    justify-content: space-between;  
-    background-color: #5E2CED;
-    
-    
+  justify-content: space-between;
+  background-color: #5e2ced;
+}
+
+.nav-li {
+  margin: 0px 100px;
+  color: wheat;
+  display: inline-block;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 8px 10px;
+}
+.nav-li:hover {
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.jumbotron {
+  background: #9575cd;
+  color: floralwhite;
+  min-width: 400px;
+  min-height: 300px;
 }

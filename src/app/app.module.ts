@@ -14,7 +14,7 @@ import { DishserviceService } from './services/dishservice.service';
 import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { HomeComponent } from './nav/home/home.component';
-import { AboutComponent } from './nav/about/about.component';
+import { ChefletterComponent } from './nav/chefletter/chefletter.component';
 import { ContactComponent } from './nav/contact/contact.component';
 import { RoutingModule } from './routing/routing.module';
 
@@ -29,7 +29,7 @@ import { RoutingModule } from './routing/routing.module';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent,
+    ChefletterComponent,
     ContactComponent
   ],
   imports: [

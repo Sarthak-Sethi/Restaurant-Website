@@ -17,6 +17,8 @@ import { HomeComponent } from './nav/home/home.component';
 import { ChefletterComponent } from './nav/chefletter/chefletter.component';
 import { ContactComponent } from './nav/contact/contact.component';
 import { RoutingModule } from './routing/routing.module';
+import { PromotionService } from './services/promotion.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -24,22 +26,24 @@ import { RoutingModule } from './routing/routing.module';
   declarations: [
     AppComponent,
     MenuComponent,
+    ContactComponent,
     DishdetailComponent,
     RatingComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
     ChefletterComponent,
-    ContactComponent
+    
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     FlexLayoutModule,
-    RoutingModule
+    RoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [DishserviceService],
+  providers: [DishserviceService,PromotionService],
   bootstrap: [AppComponent]
 })
 

@@ -1,19 +1,14 @@
+<div class="card-deck">
+    <div class="card text-white" *ngFor="let dish of dishes" (click)="showDescription(dish)">
+        <img class="card-img-top" src="{{dish.image}}" alt="Card image cap">
+        <div class="card-body">
+            <h3 class="card-title">{{dish.name}}</h3>
+            <p class="card-text">{{dish.description}}</p>
+            <a href="#" class="btn btn-light">{{dish.price}}</a>
+        </div>
+    </div>
 
-    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css"> -->
+    
+</div>
 
-        
-            <div class="card-deck">
-                    <div class="card text-white" *ngFor="let dish of dishes" (click)="showDescription(dish)">
-                        <img class="card-img-top" src="{{dish.image}}" alt="Card image cap" width=300 height=300>
-                        <div class="card-body">
-                            <h3 class="card-title">{{dish.name}}</h3>
-                            <p class="card-text">{{dish.description}}</p>
-                            <a href="#" class="btn btn-light">{{dish.price}}</a>
-                        </div>
-                    </div>
-            </div>
-
-            <app-dishdetail  [dish] = "selectedDish"  ></app-dishdetail>
-
-
-
+<app-dishdetail [dish]="selectedDish"></app-dishdetail>

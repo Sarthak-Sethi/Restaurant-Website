@@ -1,4 +1,4 @@
-import { Dish } from './dish';
+import { Dish } from '../model/dish';
 
 export const DISHES: Dish[] = [
     {

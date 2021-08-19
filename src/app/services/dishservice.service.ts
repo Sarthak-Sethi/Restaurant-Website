@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Dish } from '../dish';
-import { DISHES } from '../dishes';
+import { Dish } from '../model/dish';
+import { DISHES } from '../data/dishes';
 
 @Injectable({
   providedIn: 'root'

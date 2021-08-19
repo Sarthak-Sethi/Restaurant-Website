@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Dish } from '../dish';
+import { DISHES } from '../data/dishes';
+import { Dish } from '../model/dish';
 
 
 @Component({
@@ -10,14 +11,17 @@ import { Dish } from '../dish';
 export class DishdetailComponent implements OnInit {
 
   @Input()
-  dish: Dish = new Dish();
+  dish: Dish = DISHES[1];
 
 
-  constructor() { }
+  constructor() { 
+   
+  }
 
 
 
   ngOnInit(): void {
+    this.dish = DISHES[0];
   }
 
 }

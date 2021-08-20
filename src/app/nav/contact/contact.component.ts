@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { posinteger } from 'src/app/customvalidators/posinteger';
 
 
 @Component({
@@ -22,14 +23,22 @@ export class ContactComponent implements OnInit {
       firstName : ['',[Validators.minLength(2),Validators.required]],
       lastName : ["",[Validators.minLength(2),Validators.required]],
       email : ["",[Validators.email,Validators.required]],
-      noOfPeople : ["",Validators.required],
-      child : ["",Validators.required],
+      noOfPeople : [1,Validators.required],
+      child : [0,Validators.required],
       acceptTandC : [false,Validators.requiredTrue],
       date : ["",Validators.required],
       time : ["",Validators.required],
-    });
-  }
+    },{
+      Validators: posinteger("noOfPeople"),
+    }
+    );
+    
 
+  }
+print(){
+  console.log(this.reservationForm.controls.noOfPeople.errors);
+  
+}
   get prefix() {
     return this.reservationForm.controls;
   }

@@ -6,6 +6,9 @@
     margin: auto;
     width:319px;
     height: 600px;
+}
 
-    
+p {
+    letter-spacing: 2px;
+    line-height: 1.6;
 }

@@ -1,0 +1,20 @@
+<div class="container">
+
+
+    <div class="row mb-3">
+        <div class="col col-lg-6">
+         <img [src]="obj.strMealThumb" [alt]="obj.strMeal"  class="w-100 ">
+        </div>
+        <div class="col col-lg-6">
+          <h3><i>T O D A Y S  - S P E C I A L</i> </h3> 
+          <p id="indegredents">
+           {{ obj.strInstructions}}
+          </p>
+          <ul class="mt-3">
+            <li>    <p><strong>Category:</strong> {{obj.strCategory}}</p>  </li>  
+            <li>  <p><strong>Area:</strong> {{obj.strArea}}</p>  </li>  
+            <li> <p><strong>Tags:</strong> {{obj.strTags}}</p> </li>  
+          </ul>
+        </div>
+      </div>
+</div>

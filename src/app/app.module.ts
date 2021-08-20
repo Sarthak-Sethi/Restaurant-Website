@@ -19,6 +19,8 @@ import { ContactComponent } from './nav/contact/contact.component';
 import { RoutingModule } from './routing/routing.module';
 import { PromotionService } from './services/promotion.service';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TodayspecialComponent } from './nav/home/todayspecial/todayspecial.component';
 
 
 
@@ -33,6 +35,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     ChefletterComponent,
+    TodayspecialComponent,
     
   ],
   imports: [
@@ -41,7 +44,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatToolbarModule,
     FlexLayoutModule,
     RoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DishserviceService,PromotionService],
   bootstrap: [AppComponent]

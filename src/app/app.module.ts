@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { FormsModule } from '@angular/forms'; 
 
 import 'hammerjs';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
@@ -21,6 +28,7 @@ import { PromotionService } from './services/promotion.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TodayspecialComponent } from './nav/home/todayspecial/todayspecial.component';
+import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 
 
 
@@ -36,6 +44,7 @@ import { TodayspecialComponent } from './nav/home/todayspecial/todayspecial.comp
     HomeComponent,
     ChefletterComponent,
     TodayspecialComponent,
+    LoginDialogComponent,
     
   ],
   imports: [
@@ -45,10 +54,16 @@ import { TodayspecialComponent } from './nav/home/todayspecial/todayspecial.comp
     FlexLayoutModule,
     RoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatFormFieldModule, 
+    MatInputModule,
+    MatCheckboxModule,
+    MatDialogModule,
+    FormsModule 
   ],
-  providers: [DishserviceService,PromotionService],
-  bootstrap: [AppComponent]
+  providers: [DishserviceService,PromotionService,],
+  bootstrap: [AppComponent],
+  entryComponents:[LoginDialogComponent]
 })
 
 

@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 
 .card {
     background-color: #835ef2;
@@ -11,4 +13,7 @@
 p {
     letter-spacing: 2px;
     line-height: 1.6;
+}
+img {
+    border-radius: 10px;
 }

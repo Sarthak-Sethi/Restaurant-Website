@@ -6,10 +6,11 @@
 #navbar {
   justify-content: space-between;
   background-color: #5e2ced;
+  
 }
 
 .nav-li {
-  margin: 0px 100px;
+  margin: 0px 30px;
   color: wheat;
   display: inline-block;
   font-size: 20px;
@@ -29,4 +30,8 @@
 }
 .active {
   background-color: #9575cd;
+  border-radius: 10px;
+}
+#login {
+  display: inline;
 }

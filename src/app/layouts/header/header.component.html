@@ -1,24 +1,37 @@
 <nav color="primary" id="navbar">
-            <ul class="nav-ul">
-              <li routerLink='/home' routerLinkActive='active' class="nav-li li_1"> <img src="../../../assets/home.png" width="20" height="20">  HOME</li>
-              <li routerLink='/chefletter' routerLinkActive='active' class="nav-li li_2"> <img src="../../../assets/about.svg" width="20" height="20"> CHEF'S LETTER</li>
-              <li routerLink='/menu' routerLinkActive='active' class="nav-li li_3"> <img src="../../../assets/menu.png" width="20" height="20"> MENU</li>
-              <li routerLink='/contact' routerLinkActive='active' class="nav-li li_4">  <img src="../../../assets/contact.png" width="20" height="20"> RESERVATIONS</li>
-            </ul>
-</nav>
-  
-    <div class=" jumbotron row align-items-center">
-        <div class="col col-lg-2">
-        </div>
-        <div class="col col-lg-5">
-            <h1>Сартхак Cafe</h1><br>
-            <p>Capxtak is an ingredient-driven restaurant set in . We offer a 10 course chef’s tasting menu, a first of its kind in India. 
-              We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations
-              will tickle your culinary senses
-            </p>
-        </div>
-        <div class="col col-lg-5">
-            <img src="../../../assets/logo2.png" alt="Logo">
-        </div>
+  <ul class="nav-ul">
+    <li routerLink='/home' routerLinkActive='active' class="nav-li li_1">
+      <img src="../../../assets/home.png" width="20" height="20"> HOME
+    </li>
+    <li routerLink='/chefletter' routerLinkActive='active' class="nav-li li_2">
+      <img src="../../../assets/about.svg" width="20" height="20"> CHEF'S LETTER
+    </li>
+    <li routerLink='/menu' routerLinkActive='active' class="nav-li li_3">
+      <img src="../../../assets/menu.png" width="20" height="20"> MENU
+    </li>
+    <li routerLink='/contact' routerLinkActive='active' class="nav-li li_4">
+      <img src="../../../assets/contact.png" width="20" height="20"> RESERVATIONS
+    </li>
+    <button class="nav-li li_4 bg-white text-dark rounded m-3" (click)="OpenLoginDialog()">
+      <img src="../../../assets/contact.png" width="20" height="20"> LOGIN</button>
+  </ul>
 
-    </div>
+</nav>
+
+<div class=" jumbotron row align-items-center">
+  <div class="col col-lg-2">
+  </div>
+  <div class="col col-lg-5">
+    <h1>Сартхак Cafe</h1><br>
+    <p>Capxtak is an ingredient-driven restaurant set in . We offer a 10 course chef’s tasting menu,
+      a first of its kind in India.
+      We take inspiration from the World's best cuisines, and create a unique fusion experience.
+      Our lipsmacking creations
+      will tickle your culinary senses
+    </p>
+  </div>
+  <div class="col col-lg-5">
+    <img src="../../../assets/logo2.png" alt="Logo">
+  </div>
+
+</div>

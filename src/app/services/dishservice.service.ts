@@ -28,10 +28,12 @@ dishes : Dish[] = DISHES;
 
 // Returning a Observable Directly
 getDishes(): Observable<Dish[]> {
-  return of(DISHES).pipe(delay(2000));
+  return of(DISHES);
 }
 
-
+getDishIds(): Observable<string[] | any> {
+  return of(DISHES.map(dish => dish.id ));
+}
 
   constructor() { }
 }

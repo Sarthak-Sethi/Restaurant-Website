@@ -11,6 +11,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon'
+import {MatButtonModule} from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms'; 
 
@@ -29,6 +31,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TodayspecialComponent } from './nav/home/todayspecial/todayspecial.component';
 import { LoginDialogComponent } from './login-dialog/login-dialog.component';
+import { AddcommentComponent } from './dishdetail/addcomment/addcomment.component';
 
 
 
@@ -45,6 +48,7 @@ import { LoginDialogComponent } from './login-dialog/login-dialog.component';
     ChefletterComponent,
     TodayspecialComponent,
     LoginDialogComponent,
+    AddcommentComponent,
     
   ],
   imports: [
@@ -59,6 +63,9 @@ import { LoginDialogComponent } from './login-dialog/login-dialog.component';
     MatInputModule,
     MatCheckboxModule,
     MatDialogModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
     FormsModule 
   ],
   providers: [DishserviceService,PromotionService,],

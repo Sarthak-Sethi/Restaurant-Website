@@ -1,24 +1,50 @@
-<!-- <mat-toolbar color="dark">
-    Login
-  <span class="flex-spacer"></span>
-  <button mat-button mat-dialog-close>&times;</button>
-</mat-toolbar> -->
-<form novalidate class="form-signin" (ngSubmit)="onSubmit()">
+<!-- ngModel is 2 way binding to be used in every form - hitesh 
+  During 2 way data binding make sure to give name to input as name="email" as it wont work otherwise
+  -->
+
+<!-- #email="ngModel"
+  Above SYntax is to make email a template reference 
+  And i Dont know why it is made equal to ngModel
+  -->
+
+<!-- #loginForm="ngForm"
+  The above lien is neccesary in Template driven forms just write #variableNAme="ngForm" 
+  It has fixed synatx  -->
+
+<!-- Since we gave a name of loginForm to the form we can use its valid /invalid state to disable the submit button 
+  [disabled]="loginForm.form.invalid"
+  Synatx as above here loginForm is the variable used in above comment
+  -->
+
+
+
+<form novalidate class="form-signin" #loginForm="ngForm" (ngSubmit)="onSubmit()">
   <p>
     {{user | json}}
+  </p>
+  <p>
+    {{loginForm.form.valid | json}}
   </p>
   <img class="mx-auto d-block" src="../../assets/login.gif" alt="" width="162" height="150">
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
-  <input type="email" [(ngModel)]="user.email" class="form-control" placeholder="Email address" name="email"
-    autofocus=true>
+  <input type="email" class="form-control" placeholder="Email address" [(ngModel)]="user.email" #email="ngModel" required
+    name="email">
+    <div *ngIf="email.errors?.required && email.touched" class="text-warning">
+      <p> email Cant be empty !</p>
+    </div>
   <label for="inputPassword" class=" mt-5 sr-only">Password</label>
-  <input type="password" [(ngModel)]="user.password" class="form-control" placeholder="Password" name="password">
+  <input type="password" placeholder="Password" class="form-control" [(ngModel)]="user.password" #password="ngModel" required
+    name="password">
+  <div *ngIf="password.errors?.required && password.touched" class="text-warning">
+    <p> Password Cant be empty !</p>
+  </div>
   <div class="checkbox mb-3 mt-3">
     <label>
-      <input type="checkbox" [(ngModel)]="user.remember" value="remember-me" name="remember"> Remember me
+      <input type="checkbox" [(ngModel)]="user.remember" value="remember-me" name="remember" required> Remember me
     </label>
   </div>
-  <button class="btn btn-lg btn-dark btn-block" style="background-color: #5e2ced ;" type="submit">Sign in</button>
+  <button class="btn btn-lg btn-dark btn-block" [disabled]="loginForm.form.invalid" style="background-color: #5e2ced ;"
+    type="submit">Sign in</button>
   <!-- <p class="mt-3 text-muted">© 2020-2021</p> -->
 </form>

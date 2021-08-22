@@ -7,8 +7,14 @@ import { DISHES } from '../data/dishes';
 })
 export class DishserviceService {
 dishes : Dish[] = DISHES;
-  getDishes() {
-    return this.dishes;
+
+
+  getDishes() : Promise<Dish []> {
+    return new Promise(
+      (resolve,reject) => {
+        resolve(this.dishes);
+      }
+      )
   }
   constructor() { }
 }

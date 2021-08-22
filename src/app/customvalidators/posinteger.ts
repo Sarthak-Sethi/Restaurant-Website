@@ -1,5 +1,6 @@
-import { FormGroup } from "@angular/forms";
+import { FormGroup, Validators } from "@angular/forms";
 
+// Question ? why is this custom Validator not working
 export function posinteger(  inputNo : string ){
     return ( 
         (formgroup : FormGroup) => {

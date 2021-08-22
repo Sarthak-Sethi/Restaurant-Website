@@ -3,14 +3,14 @@ import { Dish } from '../model/dish';
 export const DISHES: Dish[] = [
     {
         id: '0',
-      name: ' large pizza',
-      image: '../../assets/pizza.gif',
-      category: 'mains',
-      featured: true,
-      label: 'Hot',
-      price: '4.99',
+        name: ' large pizza',
+        image: '../../assets/pizza.gif',
+        category: 'mains',
+        featured: true,
+        label: 'Hot',
+        price: '4.99',
         // tslint:disable-next-line:max-line-length
-        description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+        description: 'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives and Buffalo Paneer.',
         comments: [
             {
                 rating: 5,
@@ -88,12 +88,12 @@ export const DISHES: Dish[] = [
     },
     {
         id: '2',
-      name: 'Fried Chicken',
-      image: '../../assets/fried-chicken.gif',
-      category: 'appetizer',
-      featured: false,
-      label: 'New',
-      price: '9.99',
+        name: 'Fried Chicken',
+        image: '../../assets/fried-chicken.gif',
+        category: 'appetizer',
+        featured: false,
+        label: 'New',
+        price: '9.99',
         description: 'A quintessential ConFusion experience, is it a vada or is it a donut?',
         comments: [
             {
@@ -130,12 +130,12 @@ export const DISHES: Dish[] = [
     },
     {
         id: '3',
-      name: 'Lemonade Drink',
-      image: '../../assets/lemonade.gif',
-      category: 'dessert',
-      featured: false,
-      label: '',
-      price: '2.99',
+        name: 'Lemonade Drink',
+        image: '../../assets/lemonade.gif',
+        category: 'dessert',
+        featured: false,
+        label: '',
+        price: '2.99',
         description: 'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
         comments: [
             {

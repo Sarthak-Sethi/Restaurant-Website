@@ -23,13 +23,14 @@
 }
 
 .jumbotron {
-  background: #9575cd;
+  /* here  mom */
+  background: #A2ABAB;
   color: floralwhite;
   min-width: 400px;
   min-height: 300px;
 }
 .active {
-  background-color: #9575cd;
+  background-color: #eab5ab;
   border-radius: 10px;
 }
 #login {

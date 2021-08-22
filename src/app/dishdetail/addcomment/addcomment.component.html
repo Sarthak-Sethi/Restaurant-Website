@@ -1,23 +1,26 @@
-<h2>Add Comment </h2>
+<h2 class="text-danger"> <i>
 
-  <p>Value : {{ addCommentForm.value | json }} </p>
-        <p>Value: {{ addCommentForm.valid | json }}</p>
+        A d d - C o m m e n t
+    </i>
+</h2>
 
-<form [formGroup]="addCommentForm" >
+<!-- <p>Value : {{ addCommentForm.value | json }} </p>
+        <p>Value: {{ addCommentForm.valid | json }}</p> -->
+
+<form [formGroup]="addCommentForm">
 
     <input type="text" placeholder="Name" formControlName="author" class="form-control" />
-    <label>  </label>
+    <label> </label>
     <input type="text" placeholder="Your review here .." formControlName="comment" class="form-control" />
 
-    <button  class="form-control mt-3 mb-3"  mat-icon-button color="incss" *ngFor="let r of ratingArr; index as i" 
-    (click)="onClick(i)">
-    <mat-icon formControlName="rating" >
-        {{ returnStar(i) }}
-    </mat-icon>
-</button > 
-        <div class="text-center mt-3">
-        <button (click)="onSubmit()" class="btn btn-success btn-lg px-4 mr-3"> Add Comment !</button>
-        <p>Test </p>
-      
+    <button class="form-control mt-3 mb-3" mat-icon-button color="incss" *ngFor="let r of ratingArr; index as i"
+        (click)="onClick(i)">
+        <mat-icon>
+            {{ returnStar(i) }}
+        </mat-icon>
+    </button>
+    <div class="text-center mt-3 mb-4 ">
+        <button (click)="onSubmit()" class="btn btn-success btn-lg px-4 mr-3" [disabled]="!addCommentForm.valid"
+            style="background-color: #5e2ced;"> Add Comment !</button>
     </div>
 </form>

@@ -116,16 +116,12 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button (click)="onSubmit()" class="btn btn-success btn-lg px-4 mr-3">Reserve Your seat !</button>
-                        <button (click)="onReset()" class="btn btn-danger" type="reset">
+                        <button (click)="onSubmit()" class="btn btn-lg px-4 mr-3 text-white" style="background-color: #5e2ced;">Reserve Your seat !</button>
+                        <button (click)="onReset()" class="btn btn-lg btn-danger" type="reset">
                             Reset
                         </button>
-                        <button (click)="print()" class="btn btn-danger" type="reset">
-                            print
-                        </button>
-                        <p>Test </p>
-                        <p>Value : {{ reservationForm.value | json }} </p>
-                        <p>Value: {{ reservationForm.valid | json }}</p>
+                        <!-- <p>Value : {{ reservationForm.value | json }} </p>
+                        <p>Value: {{ reservationForm.valid | json }}</p> -->
                     </div>
                 </form>
             </div>

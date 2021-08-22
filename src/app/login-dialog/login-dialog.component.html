@@ -19,14 +19,9 @@
 
 
 <form novalidate class="form-signin" #loginForm="ngForm" (ngSubmit)="onSubmit()">
-  <p>
-    {{user | json}}
-  </p>
-  <p>
-    {{loginForm.form.valid | json}}
-  </p>
+
   <img class="mx-auto d-block" src="../../assets/login.gif" alt="" width="162" height="150">
-  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+  <h1 class="h3 mb-3 font-weight-normal">Sign in to your Account</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
   <input type="email" class="form-control" placeholder="Email address" [(ngModel)]="user.email" #email="ngModel" required
     name="email">

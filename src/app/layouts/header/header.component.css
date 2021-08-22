@@ -19,18 +19,19 @@
 }
 .nav-li:hover {
   border-bottom: 1px solid white;
-  color: white;
+  color: blueviolet;
 }
 
 .jumbotron {
   /* here  mom */
-  background: #A2ABAB;
+  background: #9575CD;
   color: floralwhite;
   min-width: 400px;
   min-height: 300px;
 }
 .active {
-  background-color: #eab5ab;
+  background-color: white;
+  color: black;
   border-radius: 10px;
 }
 #login {

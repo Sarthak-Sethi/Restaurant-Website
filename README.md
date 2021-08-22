@@ -12,7 +12,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## preview
 
-<video width="800" controls>
+<video  >
   <source src="Preview.mp4" type="video/mp4" alt="video preview">
   Your browser does not support HTML video.
 </video>
